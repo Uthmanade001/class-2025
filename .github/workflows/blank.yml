@@ -35,9 +35,9 @@ jobs:
           echo Add other actions to build,
           echo test, and deploy your project.
 
-        -name: Run a script
-         run: chmod +x deploy.sh
-
-         -name: Run deployment script
+        - name: Run a script
+          run: chmod +x deploy.sh
+    
+        - name: Run deployment script
           run: ./deploy.sh
 
